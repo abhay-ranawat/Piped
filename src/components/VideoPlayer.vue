@@ -84,7 +84,7 @@ export default {
     },
     activated() {
         this.destroying = false;
-        // this.sponsors?.forEach(segment => (segment.skipped = false));
+        this.sponsors?.forEach(segment => (segment.skipped = false));
         this.hotkeysPromise.then(() => {
             var self = this;
             this.$hotkeys(
@@ -576,7 +576,6 @@ export default {
             const markers = this.$refs.container.querySelector(".shaka-ad-markers");
             const array = ["to right"];
             this.sponsors?.forEach(segment => {
-                console.log("Reached");
                 const start = (segment.segment[0] / this.video.duration) * 100;
                 const end = (segment.segment[1] / this.video.duration) * 100;
 
