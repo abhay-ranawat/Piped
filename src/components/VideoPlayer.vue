@@ -84,7 +84,7 @@ export default {
     },
     activated() {
         this.destroying = false;
-        this.sponsors?.segments?.forEach(segment => (segment.skipped = false));
+        // this.sponsors?.forEach(segment => (segment.skipped = false));
         this.hotkeysPromise.then(() => {
             var self = this;
             this.$hotkeys(
@@ -356,8 +356,8 @@ export default {
                     const time = videoEl.currentTime;
                     this.$emit("timeupdate", time);
                     this.updateProgressDatabase(time);
-                    if (this.sponsors && this.sponsors.segments) {
-                        this.sponsors.segments.map(segment => {
+                    if (this.sponsors) {
+                        this.sponsors.map(segment => {
                             if (!segment.skipped || this.selectedAutoLoop) {
                                 const end = segment.segment[1];
                                 if (time >= segment.segment[0] && time < end) {
@@ -575,7 +575,8 @@ export default {
         updateMarkers() {
             const markers = this.$refs.container.querySelector(".shaka-ad-markers");
             const array = ["to right"];
-            this.sponsors?.segments?.forEach(segment => {
+            this.sponsors?.forEach(segment => {
+                console.log("Reached");
                 const start = (segment.segment[0] / this.video.duration) * 100;
                 const end = (segment.segment[1] / this.video.duration) * 100;
 

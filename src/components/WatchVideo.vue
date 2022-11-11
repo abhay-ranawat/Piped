@@ -363,8 +363,9 @@ export default {
             return this.fetchJson(this.apiUrl() + "/streams/" + this.getVideoId());
         },
         async fetchSponsors() {
-            return await this.fetchJson(this.apiUrl() + "/sponsors/" + this.getVideoId(), {
-                category:
+            return await this.fetchJson("https://spbc.vercel.app/api/skipSegments", {
+                videoID: this.getVideoId(),
+                categories:
                     '["' +
                     this.getPreferenceString("selectedSkip", "sponsor,interaction,selfpromo,music_offtopic").replaceAll(
                         ",",
