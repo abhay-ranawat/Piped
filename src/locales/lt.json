@@ -77,7 +77,7 @@
         "source_code": "Pirminis kodas",
         "documentation": "Dokumentacija",
         "with_timecode": "Dalintis su laiko kodu",
-        "reply_count": "{count} atsakymų",
+        "reply_count": "{count} atsakymai",
         "show_chapters": "Skirsniai",
         "piped_link": "Piped nuoroda",
         "rename_playlist": "Pervardyti grojaraštį",
@@ -164,7 +164,7 @@
         "copied": "Nukopijuota!",
         "cannot_copy": "Negalima kopijuoti!",
         "page_not_found": "Puslapis nerastas",
-        "preferences_note": "Pastaba: nuostatos išsaugomos vietinėje naršyklės atmintyje. Ištrynus naršyklės duomenis, jos bus nustatyti iš naujo."
+        "preferences_note": "Pastaba: nuostatos išsaugomos vietinėje naršyklės atmintyje. Ištrynus naršyklės duomenis, jos bus nustatytos iš naujo."
     },
     "subscriptions": {
         "subscribed_channels_count": "Prenumeruojama: {0}"
