@@ -100,7 +100,8 @@
         "minimize_comments": "Yorumları Küçült",
         "minimize_comments_default": "Yorumları Öntanımlı Olarak Küçült",
         "show_watch_on_youtube": "YouTube'da İzle düğmesini göster",
-        "minimize_chapters_default": "Bölümleri Öntanımlı Olarak Küçült"
+        "minimize_chapters_default": "Bölümleri Öntanımlı Olarak Küçült",
+        "no_valid_playlists": "Dosya geçerli oynatma listeleri içermiyor!"
     },
     "player": {
         "watch_on": "{0} üzerinde izle"
@@ -109,7 +110,7 @@
         "history": "Geçmiş",
         "preferences": "Tercihler",
         "feed": "Akış",
-        "register": "Kaydol",
+        "register": "Kayıt ol",
         "login": "Oturum Aç",
         "trending": "Öne Çıkanlar",
         "subscriptions": "Abonelikler",
@@ -171,6 +172,6 @@
         "page_not_found": "Sayfa bulunamadı",
         "copied": "Kopyalandı!",
         "cannot_copy": "Kopyalanamıyor!",
-        "local_storage": "Bu eylem localStorage gerektirir, çerezler etkin mi?"
+        "local_storage": "Bu eylem yerel depolama gerektirir, çerezler etkin mi?"
     }
 }
